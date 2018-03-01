@@ -3429,7 +3429,7 @@ function loadScene() {
     cube.create();
     // load obj
     var OBJ = __webpack_require__(73);
-    var meshPathB = '../obj/branch.obj';
+    var meshPathB = './obj/branch.obj';
     var dataB = readTextFile(meshPathB);
     var meshB = new OBJ.Mesh(dataB);
     Object(__WEBPACK_IMPORTED_MODULE_10__Tree__["b" /* setBranch */])(new __WEBPACK_IMPORTED_MODULE_11__Object__["a" /* ObjInfo */](meshB));
