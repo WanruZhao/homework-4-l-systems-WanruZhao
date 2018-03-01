@@ -87,7 +87,7 @@ function loadScene() {
   ground.create();
 
   //load particle mesh
-  var meshPathP = '../obj/cube.obj';
+  var meshPathP = './obj/cube.obj';
   var dataP = readTextFile(meshPathP);
   meshP = new OBJ.Mesh(dataP);
   particle = new Array<Obj>();

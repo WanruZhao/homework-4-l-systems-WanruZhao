@@ -3447,7 +3447,7 @@ function loadScene() {
     ground = new __WEBPACK_IMPORTED_MODULE_11__Object__["b" /* default */](meshG, __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["d" /* vec4 */].create());
     ground.create();
     //load particle mesh
-    var meshPathP = '../obj/cube.obj';
+    var meshPathP = './obj/cube.obj';
     var dataP = readTextFile(meshPathP);
     meshP = new OBJ.Mesh(dataP);
     particle = new Array();
