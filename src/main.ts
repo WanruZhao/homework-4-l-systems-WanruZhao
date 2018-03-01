@@ -72,15 +72,15 @@ function loadScene() {
   var dataB = readTextFile(meshPathB);
   var meshB = new OBJ.Mesh(dataB);
   setBranch(new ObjInfo(meshB));
-  var meshPathF = '../obj/flower.obj';
+  var meshPathF = './obj/flower.obj';
   var dataF = readTextFile(meshPathF);
   var meshF = new OBJ.Mesh(dataF);
   setFlower(new ObjInfo(meshF));
-  var meshPathE = '../obj/endbranch.obj';
+  var meshPathE = './obj/endbranch.obj';
   var dataE = readTextFile(meshPathE);
   var meshE = new OBJ.Mesh(dataE);
   setEnd(new ObjInfo(meshE));
-  var meshPathG = '../obj/lowground.obj';
+  var meshPathG = './obj/lowground.obj';
   var dataG = readTextFile(meshPathG);
   var meshG = new OBJ.Mesh(dataG);
   ground = new Obj(meshG, vec4.create());

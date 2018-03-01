@@ -3433,15 +3433,15 @@ function loadScene() {
     var dataB = readTextFile(meshPathB);
     var meshB = new OBJ.Mesh(dataB);
     Object(__WEBPACK_IMPORTED_MODULE_10__Tree__["b" /* setBranch */])(new __WEBPACK_IMPORTED_MODULE_11__Object__["a" /* ObjInfo */](meshB));
-    var meshPathF = '../obj/flower.obj';
+    var meshPathF = './obj/flower.obj';
     var dataF = readTextFile(meshPathF);
     var meshF = new OBJ.Mesh(dataF);
     Object(__WEBPACK_IMPORTED_MODULE_10__Tree__["d" /* setFlower */])(new __WEBPACK_IMPORTED_MODULE_11__Object__["a" /* ObjInfo */](meshF));
-    var meshPathE = '../obj/endbranch.obj';
+    var meshPathE = './obj/endbranch.obj';
     var dataE = readTextFile(meshPathE);
     var meshE = new OBJ.Mesh(dataE);
     Object(__WEBPACK_IMPORTED_MODULE_10__Tree__["c" /* setEnd */])(new __WEBPACK_IMPORTED_MODULE_11__Object__["a" /* ObjInfo */](meshE));
-    var meshPathG = '../obj/lowground.obj';
+    var meshPathG = './obj/lowground.obj';
     var dataG = readTextFile(meshPathG);
     var meshG = new OBJ.Mesh(dataG);
     ground = new __WEBPACK_IMPORTED_MODULE_11__Object__["b" /* default */](meshG, __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["d" /* vec4 */].create());
