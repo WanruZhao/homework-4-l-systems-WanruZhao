@@ -68,7 +68,7 @@ function loadScene() {
 
   // load obj
   var OBJ = require('webgl-obj-loader');
-  var meshPathB = '../obj/branch.obj';
+  var meshPathB = './obj/branch.obj';
   var dataB = readTextFile(meshPathB);
   var meshB = new OBJ.Mesh(dataB);
   setBranch(new ObjInfo(meshB));
