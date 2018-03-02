@@ -8,9 +8,6 @@ uniform vec2 u_Dimension;
 
 in float time;
 
-in vec4 fs_Nor;
-in vec4 fs_LightVec;
-in vec4 fs_Col;
 
 out vec4 out_Col;
 

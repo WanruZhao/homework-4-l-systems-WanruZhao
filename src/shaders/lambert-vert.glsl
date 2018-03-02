@@ -21,6 +21,8 @@ uniform mat4 u_ViewProj;    // The matrix that defines the camera's transformati
 
 uniform vec4 u_Color;
 
+uniform int u_Time;
+
 in vec4 vs_Pos;             // The array of vertex positions passed to the shader
 
 in vec4 vs_Nor;             // The array of vertex normals passed to the shader
@@ -54,7 +56,16 @@ void main()
 
     fs_glPos = u_ViewProj * modelposition;
 
-    gl_Position = u_ViewProj * modelposition;// gl_Position is a built-in variable of OpenGL which is
+    float cosT = cos(float(u_Time) / 250.0f);
+    float sinT = sin(float(u_Time) / 250.0f);
+    mat4 anim = mat4(
+        cosT, 0.0, sinT, 0.0,
+        0.0, 1.0, 0.0, 0.0,
+        -sinT, 0.0, cosT, 0.0,
+        0.0, 0.0, 0.0, 1.0
+    );
+
+    gl_Position =  u_ViewProj * anim * modelposition;// gl_Position is a built-in variable of OpenGL which is
                                              // used to render the final positions of the geometry's vertices
 
                                              

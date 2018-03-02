@@ -196,7 +196,7 @@ function main() {
   //-------------------set up scene, gl and camera-----------------
   // Initial call to load scene
   loadScene();
-  const camera = new Camera(vec3.fromValues(0, 50, 100), vec3.fromValues(0, 0, 0));
+  const camera = new Camera(vec3.fromValues(0, 5, 100), vec3.fromValues(0, 0, 0));
   const renderer = new OpenGLRenderer(canvas);
   renderer.setClearColor(1.0, 0.72, 0.75, 1);
   gl.enable(gl.DEPTH_TEST);
